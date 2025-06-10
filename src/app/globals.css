@@ -3,15 +3,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --brown-700: #7B3F00;
-  --brown-800: #5D2C00;
+  --brown-50: #fdfaf7;
+  --brown-100: #f8f1ea;
+  --brown-200: #e9d6c6;
+  --brown-300: #d6b399;
+  --brown-400: #b98a66;
+  --brown-500: #986238;
+  --brown-600: #7b4c2c;
+  --brown-700: #5f3922;
+  --brown-800: #472a1a;
+  --brown-900: #2f1b11;
+  --brown-950: #1e100a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brown-50: var(--brown-50);
+  --color-brown-100: var(--brown-100);
+  --color-brown-200: var(--brown-200);
+  --color-brown-300: var(--brown-300);
+  --color-brown-400: var(--brown-400);
+  --color-brown-500: var(--brown-500);
+  --color-brown-600: var(--brown-600);
   --color-brown-700: var(--brown-700);
   --color-brown-800: var(--brown-800);
+  --color-brown-900: var(--brown-900);
+  --color-brown-950: var(--brown-950);
 }
 
 @media (prefers-color-scheme: dark) {
