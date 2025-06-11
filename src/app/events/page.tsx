@@ -1,5 +1,5 @@
 import { events } from "@/data/events";
-import EventCard from "@/components/event";
+import { EventCard, UpcomingEvent, SectionTitle } from "@/components";
 import Link from "next/link";
 
 const EVENTS_PER_PAGE = 2;
@@ -16,6 +16,20 @@ export default function EventsPage({ searchParams }: { searchParams: { page: str
 
   return (
     <section className="p-6">
+
+      <div className="max-w-4xl mx-auto text-center mb-10 px-4">
+        <h1 className="text-gray-700 text-xl md:text-2xl">
+          Explore our past performances and upcoming events celebrating the rich tradition of Angklung music.
+          Check out these events below and join us for workshops, concerts, and cultural collaborations!
+        </h1>
+      </div>
+
+      <SectionTitle title="Upcoming Event" onLeft={true} />
+
+      <div>
+        <UpcomingEvent />
+      </div>
+
       <h1 className="text-3xl font-bold text-center mb-8">All Events</h1>
 
       {paginatedEvents.map((event) => (
@@ -29,7 +43,7 @@ export default function EventsPage({ searchParams }: { searchParams: { page: str
             href={`?page=${currentPage - 1}`}
             className="px-3 py-1 border rounded hover:bg-gray-100"
           >
-            ← Prev
+            &lt;
           </Link>
         )}
 
@@ -38,9 +52,8 @@ export default function EventsPage({ searchParams }: { searchParams: { page: str
           <Link
             key={page}
             href={`?page=${page}`}
-            className={`px-3 py-1 border rounded ${
-              page === currentPage ? "bg-brown-700 text-white" : "hover:bg-gray-100"
-            }`}
+            className={`px-3 py-1 border rounded ${page === currentPage ? "bg-brown-700 text-white" : "hover:bg-gray-100"
+              }`}
           >
             {page}
           </Link>
@@ -52,7 +65,7 @@ export default function EventsPage({ searchParams }: { searchParams: { page: str
             href={`?page=${currentPage + 1}`}
             className="px-3 py-1 border rounded hover:bg-gray-100"
           >
-            Next →
+            &gt;
           </Link>
         )}
       </div>

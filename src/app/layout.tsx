@@ -20,13 +20,6 @@ export default function RootLayout({
       <body className={`${inter.className} bg-white text-black`}>
         <Navbar />
         <Hero />
-        <EventCard
-          title="Angklung Performance with Maestro Sam Udjo"
-          date="July 18, 2025"
-          location="San Francisco"
-          description="Join us for a magical night of music with Maestro Sam Udjo visiting from Indonesia. This educational performance will feature traditional Angklung music, cultural storytelling, and community engagement."
-          imageUrl="/placeholder.jpg"
-        />
         {children}
       </body>
     </html>

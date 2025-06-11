@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { formatDate } from "@/utils/formatDate";
 
 type EventCardProps = {
   title: string;
@@ -22,7 +23,7 @@ const EventCard = ({ title, date, location, description, imageUrl }: EventCardPr
       </div>
       <div className="md:w-1/2 p-6 flex flex-col justify-center">
         <h2 className="text-2xl font-bold mb-2 text-brown-800">{title}</h2>
-        <p className="text-gray-600 mb-1"><strong>Date:</strong> {date}</p>
+        <p className="text-gray-600 mb-1"><strong>Date:</strong> {formatDate(date)}</p>
         <p className="text-gray-600 mb-3"><strong>Location:</strong> {location}</p>
         <p className="text-gray-800 mb-4">{description}</p>
       </div>
