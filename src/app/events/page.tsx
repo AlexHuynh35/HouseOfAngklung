@@ -16,7 +16,6 @@ export default function EventsPage({ searchParams }: { searchParams: { page: str
 
   return (
     <section className="p-6">
-
       <div className="max-w-4xl mx-auto text-center mb-10 px-4">
         <h1 className="text-gray-700 text-xl md:text-2xl">
           Explore our past performances and upcoming events celebrating the rich tradition of Angklung music.
@@ -26,11 +25,9 @@ export default function EventsPage({ searchParams }: { searchParams: { page: str
 
       <SectionTitle title="Upcoming Event" onLeft={true} />
 
-      <div>
-        <UpcomingEvent />
-      </div>
+      <UpcomingEvent />
 
-      <h1 className="text-3xl font-bold text-center mb-8">All Events</h1>
+      <SectionTitle title="All Events" onLeft={false} />
 
       {paginatedEvents.map((event) => (
         <EventCard key={event.id} {...event} />

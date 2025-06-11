@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className="px-4 pb-4 pt-12 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          House of Angklung San Francisco
+          Angklung House San Francisco
         </h1>
       </div>
 
