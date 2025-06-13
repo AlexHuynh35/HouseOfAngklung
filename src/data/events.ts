@@ -10,36 +10,12 @@ export type Event = {
 export const events: Event[] = [
   {
     id: 1,
-    title: "Sample Event",
-    date: "2024-10-12",
-    location: "San Francisco",
-    description: "This is an event.",
-    imageUrl: "/placeholder.jpg",
-  },
-  {
-    id: 2,
-    title: "Sample Event",
-    date: "2024-11-05",
-    location: "San Francisco",
-    description: "This is an event.",
-    imageUrl: "/placeholder.jpg",
-  },
-  {
-    id: 3,
     title: "Angklung Performance with Maestro Sam Udjo",
-    date: "2025-07-18",
+    date: "2025-07-19",
     location: "San Francisco",
     description: "Join us for a magical night of music with Maestro Sam Udjo visiting from Indonesia. This educational performance will feature traditional Angklung music, cultural storytelling, and community engagement.",
-    imageUrl: "/placeholder.jpg",
-  },
-  {
-    id: 4,
-    title: "Sample Event",
-    date: "2025-12-02",
-    location: "San Francisco",
-    description: "This is an event.",
-    imageUrl: "/placeholder.jpg",
-  },
+    imageUrl: "/Sam.jpg",
+  }
 ];
 
 export function getUpcomingEvent(): Event | null {

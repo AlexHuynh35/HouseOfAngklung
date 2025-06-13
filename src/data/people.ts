@@ -8,26 +8,26 @@ export type Person = {
 export const people: Person[] = [
   {
     id: 1,
-    name: "Person 1",
-    position: "Position 1",
-    imageUrl: "/placeholder.jpg",
+    name: "Jonathan Paul Gordon",
+    position: "Chairman",
+    imageUrl: "/John.jpg",
   },
   {
     id: 2,
-    name: "Person 2",
-    position: "Position 2",
-    imageUrl: "/placeholder.jpg",
+    name: "Suryanti Gordon",
+    position: "Founder and Director",
+    imageUrl: "/Suryanti.jpg",
   },
   {
     id: 3,
-    name: "Person 3",
-    position: "Position 3",
-    imageUrl: "/placeholder.jpg",
+    name: "Andre Harsono",
+    position: "Co-Chairman",
+    imageUrl: "/Andre.jpg",
   },
   {
     id: 4,
-    name: "Person 4",
-    position: "Position 4",
-    imageUrl: "/placeholder.jpg",
+    name: "Yulda Asmara",
+    position: "Public Relations Manager",
+    imageUrl: "/Yulda.jpg",
   }
 ];

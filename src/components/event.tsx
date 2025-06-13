@@ -12,13 +12,12 @@ type EventCardProps = {
 const EventCard = ({ title, date, location, description, imageUrl }: EventCardProps) => {
   return (
     <div className="max-w-5xl mx-auto my-8 flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
-      <div className="md:w-1/2">
+      <div className="relative w-full h-[350px] m-4 md:w-1/2">
         <Image
           src={imageUrl}
           alt={title}
-          width={600}
-          height={400}
-          className="object-cover w-full h-full"
+          fill
+          className="object-cover rounded-lg"
         />
       </div>
       <div className="md:w-1/2 p-6 flex flex-col justify-center">

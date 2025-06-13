@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         <Link href="/" className="text-xl font-bold text-brown-800">
-          Angklung House San Francisco
+          Angklung House of San Francisco
         </Link>
 
       </div>
