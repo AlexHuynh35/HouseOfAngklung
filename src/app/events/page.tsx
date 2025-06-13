@@ -8,8 +8,13 @@ function getPageNumbers(total: number, perPage: number) {
   return Array.from({ length: Math.ceil(total / perPage) }, (_, i) => i + 1);
 }
 
-export default function EventsPage({ searchParams }: { searchParams: { page?: string } }) {
-  const currentPage = Number(searchParams.page) || 1;
+type EventsPageProps = {
+  params: Promise<{ page: string }>;
+};
+
+export default async function EventsPage({ params }: EventsPageProps) {
+  const { page } = await params;
+  const currentPage = Number(page) || 1;
   const startIndex = (currentPage - 1) * EVENTS_PER_PAGE;
   const paginatedEvents = events.slice(startIndex, startIndex + EVENTS_PER_PAGE);
   const pageNumbers = getPageNumbers(events.length, EVENTS_PER_PAGE);
