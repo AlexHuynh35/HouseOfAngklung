@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { Dropdown } from "@/components";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,27 +18,15 @@ const Navbar = () => {
         </button>
 
         <div className={`md:flex gap-6 ${isOpen ? "block" : "hidden"} md:block`}>
-          <Link href="/about" className="block py-2 text-gray-800 hover:text-brown-700">
+          <Link href="/about" className="block py-2 text-gray-800 hover:text-brown-700 hover:underline">
             About
           </Link>
 
-          <Link href="/events" className="block py-2 text-gray-800 hover:text-brown-700">
+          <Link href="/events" className="block py-2 text-gray-800 hover:text-brown-700 hover:underline">
             Events
           </Link>
 
-          <div className="relative group">
-            <button className="block py-2 text-gray-800 hover:text-brown-700">
-              Learn
-            </button>
-            <div className="absolute hidden group-hover:block bg-white shadow-md border rounded mt-2">
-              <Link href="/learn/history" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                History
-              </Link>
-              <Link href="/learn/people" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                Maestro Sam Udjo
-              </Link>
-            </div>
-          </div>
+          <Dropdown />
         </div>
 
         <Link href="/" className="text-xl font-bold text-brown-800">

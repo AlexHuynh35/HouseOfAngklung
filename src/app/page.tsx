@@ -17,14 +17,14 @@ export default function Home() {
 
       <FactCard
         title="Angklung Fact 1"
-        description="Interesting Fact"
+        description="The Angklung is made of bamboo and played by shaking. Each instrument produces just one note, so a full melody can only be played when multiple players work together in harmony — making it a deeply collaborative musical experience."
         imageUrl="/placeholder.jpg"
         onLeft={true}
       />
 
       <FactCard
         title="Angklung Fact 2"
-        description="Interesting Fact"
+        description="The Angklung is recognized by UNESCO as a Masterpiece of Oral and Intangible Heritage of Humanity. This designation highlights the instrument’s cultural importance and its role in preserving traditional Indonesian music."
         imageUrl="/placeholder.jpg"
         onLeft={false}
       />

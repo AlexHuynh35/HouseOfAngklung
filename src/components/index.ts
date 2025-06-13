@@ -6,3 +6,5 @@ export { default as UpcomingEvent } from "./upcoming";
 export { default as SectionTitle } from "./section";
 export { default as FactCard } from "./fact";
 export { default as PersonCard } from "./person";
+export { default as LearningSection } from "./learn";
+export { default as Dropdown } from "./dropdown";

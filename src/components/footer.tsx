@@ -3,12 +3,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-brown-900 text-brown-100 py-8 px-4">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
         <div>
-          <h2 className="text-lg font-semibold">House of Angklung SF</h2>
-          <p className="text-sm mt-2">
-            Celebrating Indonesian music & culture in the Bay Area.
-          </p>
+          <h2 className="text-lg font-semibold">Angklung House of San Francisco</h2>
         </div>
 
         <div>
