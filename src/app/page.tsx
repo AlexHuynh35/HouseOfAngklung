@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { UpcomingEvent, SectionTitle, FactCard } from "@/components";
 
 export default function Home() {
