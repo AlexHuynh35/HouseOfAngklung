@@ -22,8 +22,8 @@ export default function Home() {
       />
 
       <FactCard
-        title="Angklung Fact 2"
-        description="The Angklung is recognized by UNESCO as a Masterpiece of Oral and Intangible Heritage of Humanity. This designation highlights the instrument’s cultural importance and its role in preserving traditional Indonesian music."
+        title="Angklung Fact 3"
+        description="The Angklung was recognized by UNESCO in 2010 as a Masterpiece of Oral and Intangible Heritage of Humanity. This designation highlights the instrument’s cultural importance and its role in preserving traditional Indonesian music."
         imageUrl="/unesco.png"
         onLeft={false}
       />

@@ -26,7 +26,7 @@ export default function Dropdown() {
       </button>
 
       {open && (
-        <div className="absolute left-0 mt-2 w-128 bg-white border rounded shadow-md z-50 p-4 grid grid-cols-2 gap-4">
+        <div className="absolute left-0 mt-2 w-96 bg-white border rounded shadow-md z-50 p-4 grid grid-cols-2 gap-4">
           {/* Column 1: History */}
           <div>
             <h3 className="text-sm font-semibold text-gray-700 mb-2">History</h3>

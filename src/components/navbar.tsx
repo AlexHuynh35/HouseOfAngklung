@@ -17,7 +17,7 @@ const Navbar = () => {
           ☰
         </button>
 
-        <div className={`md:flex gap-6 ${isOpen ? "block" : "hidden"} md:block`}>
+        <div className="hidden md:flex gap-6">
           <Link href="/about" className="block py-2 text-gray-800 hover:text-brown-700 hover:underline">
             About
           </Link>
@@ -32,8 +32,21 @@ const Navbar = () => {
         <Link href="/" className="text-xl font-bold text-brown-800">
           Angklung House of San Francisco
         </Link>
-
       </div>
+
+      {isOpen && (
+        <div className="flex flex-col gap-2 mt-3 md:hidden pr-4">
+          <Link href="/about" className="block py-2 text-gray-800 hover:text-brown-700 hover:underline">
+            About
+          </Link>
+
+          <Link href="/events" className="block py-2 text-gray-800 hover:text-brown-700 hover:underline">
+            Events
+          </Link>
+
+          <Dropdown />
+        </div>
+      )}
     </nav>
   );
 };

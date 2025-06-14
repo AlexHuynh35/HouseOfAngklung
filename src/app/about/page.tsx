@@ -9,9 +9,8 @@ export default function AboutPage() {
           About Us
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-          We are a community-driven group dedicated to sharing the beauty of Angklung — a traditional Indonesian bamboo instrument — through performances, workshops, and cultural education.
-          <br /><br />
-          Based in the Bay Area, we connect people of all backgrounds through music, storytelling, and hands-on experiences that celebrate Indonesian heritage.
+          We are a community-driven group dedicated to sharing the beauty of Angklung through performances, workshops, and cultural education.
+          Based in the Bay Area, we connect people of all backgrounds through music, storytelling, and hands-on experiences.
         </p>
       </div>
 

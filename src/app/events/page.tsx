@@ -23,9 +23,7 @@ export default async function EventsPage({ params }: EventsPageProps) {
     <section className="p-6">
       <div className="max-w-4xl mx-auto text-center mb-10 px-4">
         <h1 className="text-gray-700 text-xl md:text-2xl">
-          Explore our past performances and upcoming events celebrating the rich tradition of Angklung music.
-          <br /><br />
-          Check out these events below and join us for workshops, concerts, and cultural collaborations!
+          Explore our past performances and upcoming events — including workshops, concerts, and cultural collaborations — celebrating the rich tradition of Angklung music!
         </h1>
       </div>
 

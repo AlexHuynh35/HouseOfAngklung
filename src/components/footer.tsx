@@ -4,14 +4,21 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-brown-900 text-brown-100 py-8 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-9 text-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-9 text-center">
         {/* Title / Organization Info */}
         <div>
           <h2 className="text-lg font-semibold">Angklung House of San Francisco</h2>
         </div>
 
         {/* Navigation Links */}
-        <div className="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-5 gap-4">
+          {/* Home */}
+          <div>
+            <h3 className="text-lg font-semibold mb-3">
+              <Link href="/" className="hover:underline">Home</Link>
+            </h3>
+          </div>
+          
           {/* About */}
           <div>
             <h3 className="text-lg font-semibold mb-3">

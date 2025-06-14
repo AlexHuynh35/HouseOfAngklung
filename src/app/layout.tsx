@@ -6,8 +6,8 @@ import { Navbar, Hero, Footer } from "@/components/index";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "House of Angklung SF",
-  description: "Learn about Angklung workshops, performances, and education in San Francisco.",
+  title: "Angklung House of San Francisco",
+  description: "Learn about Angklung workshops, performances, and other events happening in San Francisco.",
 };
 
 export default function RootLayout({
