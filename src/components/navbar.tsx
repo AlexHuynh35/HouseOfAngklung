@@ -30,8 +30,8 @@ const Navbar = () => {
           <Dropdown />
         </div>
 
-        <div className="flex items-center gap-6 ml-auto">
-          <Link href="/" className="text-md sm:text-lg md:text-xl font-bold text-brown-800">
+        <div className="flex items-center gap-3 md:gap-6 ml-auto">
+          <Link href="/" className="text-md md:text-xl font-bold text-brown-800">
             Angklung House of San Francisco
           </Link>
 
