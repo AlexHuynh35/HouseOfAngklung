@@ -32,7 +32,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-6 ml-auto">
           <Link href="/" className="text-lg font-bold text-brown-800">
-            Angklung House of San Francisco
+            AngklungSF
           </Link>
 
           <div className="w-8 h-8 rounded-full overflow-hidden">
