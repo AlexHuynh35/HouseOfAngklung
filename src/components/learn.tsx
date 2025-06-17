@@ -20,7 +20,7 @@ const LearningSection = ({ title, imageUrl, text }: LearningSectionProps) => {
         </div>
 
         <div className="w-full md:w-1/2">
-          <h2 className="text-2xl font-bold text-brown-800 mb-4">{title}</h2>
+          <h2 className="text-3xl font-bold text-brown-800 mb-4">{title}</h2>
           {text.map((paragraph, index) => (
             <p key={index} className="text-gray-700 leading-relaxed mb-4">
               {paragraph}

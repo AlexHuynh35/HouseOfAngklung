@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
 
       <div className="flex justify-center">
-        <div className="w-9/10 h-px bg-brown-500" />
+        <div className="w-9/10 h-1 bg-brown-500 rounded" />
       </div>
 
     </section>

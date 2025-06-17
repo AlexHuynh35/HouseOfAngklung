@@ -29,7 +29,7 @@ const FactCard = ({ title, description, imageUrl, onLeft }: FactProps) => {
     );
   } else {
     return (
-      <div className="max-w-5xl mx-auto my-8 flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+      <div className="max-w-5xl mx-auto my-8 flex flex-col-reverse md:flex-row bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
         <div className="md:w-1/2 p-6 flex flex-col text-center justify-center">
           <h2 className="text-2xl mb-2 text-brown-800">{description}</h2>
         </div>
