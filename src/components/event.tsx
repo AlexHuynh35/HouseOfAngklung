@@ -1,5 +1,13 @@
 import Image from "next/image";
 import { formatDate } from "@/utils/formatDate";
+import { MediaCarousel } from "@/components";
+
+type MediaItem = {
+  title: string;
+  isImage: boolean;
+  onYouTube: boolean;
+  mediaUrl: string;
+};
 
 type EventCardProps = {
   title: string;
@@ -8,21 +16,14 @@ type EventCardProps = {
   building: string;
   address: string;
   description: string;
-  imageUrl: string;
+  media: MediaItem[];
 };
 
-const EventCard = ({ title, date, time, building, address, description, imageUrl }: EventCardProps) => {
+const EventCard = ({ title, date, time, building, address, description, media }: EventCardProps) => {
   return (
     <div className="max-w-5xl mx-auto my-8 flex flex-col md:flex-row md:items-center bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
       <div className="w-full md:w-1/2 p-4">
-        <div className="relative w-full h-[350px]">
-          <Image
-            src={imageUrl}
-            alt={title}
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
+        <MediaCarousel media={media}/>
       </div>
 
       <div className="md:w-1/2 p-6 flex flex-col justify-center">

@@ -9,3 +9,4 @@ export { default as PersonCard } from "./person";
 export { default as LearningSection } from "./learn";
 export { default as Dropdown } from "./dropdown";
 export { default as VideoCard } from "./video";
+export { default as MediaCarousel } from "./carousel";
