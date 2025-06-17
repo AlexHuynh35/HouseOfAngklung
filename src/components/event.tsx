@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { formatDate } from "@/utils/formatDate";
 import { MediaCarousel } from "@/components";
 
