@@ -1,6 +1,5 @@
 import { people } from "@/data/people";
 import { SectionTitle, PersonCard, FactCard } from "@/components";
-import Image from "next/image";
 
 export default function AboutPage() {
   return (
