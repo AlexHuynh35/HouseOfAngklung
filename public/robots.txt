@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.angklungsf.com
+
+# Sitemaps
+Sitemap: https://www.angklungsf.com/sitemap.xml
