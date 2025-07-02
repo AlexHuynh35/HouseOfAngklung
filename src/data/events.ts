@@ -32,7 +32,7 @@ export const events: Event[] = [
         title: "Media 1",
         isImage: true,
         onYouTube: false,
-        mediaUrl: "/whispers2.png",
+        mediaUrl: "/whispers3.png",
       },
     ],
   },
