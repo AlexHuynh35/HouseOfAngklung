@@ -1,5 +1,5 @@
 import { formatDate } from "@/utils/formatDate";
-import { MediaCarousel } from "@/components";
+import { MediaCarousel, ScrollableDescription } from "@/components";
 
 type MediaItem = {
   title: string;
@@ -22,7 +22,7 @@ const EventCard = ({ title, date, time, building, address, description, media }:
   return (
     <div className="max-w-5xl mx-auto my-8 flex flex-col md:flex-row md:items-center bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
       <div className="w-full md:w-1/2 p-4">
-        <MediaCarousel media={media}/>
+        <MediaCarousel media={media} />
       </div>
 
       <div className="md:w-1/2 p-6 flex flex-col justify-center">
@@ -34,7 +34,7 @@ const EventCard = ({ title, date, time, building, address, description, media }:
           <span className="pl-4 block">{building}</span>
           <span className="pl-4 text-sm text-gray-600">{address}</span>
         </p>
-        <p className="text-gray-800">{description}</p>
+        <ScrollableDescription description={description} />
       </div>
     </div>
   );

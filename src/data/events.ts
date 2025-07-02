@@ -19,18 +19,20 @@ export type Event = {
 export const events: Event[] = [
   {
     id: 1,
-    title: "Angklung Whispers: The Forgotten Story",
+    title: "Angklung Whispers: The Untold Story by Sylvanna Nelwan",
     date: "2024-10-26",
     time: "3:00 - 5:00 PM",
     building: "Community Music Center",
     address: "544 Capp Street San Francisco, CA 94110",
-    description: "This powerful Angklung musical theater performance revives the echoes of bravery and unity, buried in history, but now awakened through the vibrant sounds of Indonesia's sacred bamboo instrument. Every note carries a story, a message, a whisper of the past, as this one-of-a-kind production takes you on unforgettable journey of courage and hope.",
+    description: `Angklung Journey was a thoughtfully curated educational event examining the cultural and historical evolution of the angklung, a traditional bamboo instrument from West Java, Indonesia. Through live performance and storytelling, the event highlighted the angklung's role in community life, music education, and intergenerational transmission. \n
+                At the heart of the program was a powerful original narrative titled Angklung Whispers, written by Sylvanna Nelwan and first introduced on May 05, 2024. The story illuminated the instrument's journey through time — interweaving ancestral memory, ritual, and renewal. Its inclusion during Angklung Journey offered audiences a compelling lens into the cultural heartbeat of the angklung, transforming historical knowledge into lived emotional resonance. \n
+                The event was warmly received, underscoring how this UNESCO-recognized instrument continues to inspire learning, harmony, and connection across cultures.`,
     media: [
       {
         title: "Media 1",
         isImage: true,
         onYouTube: false,
-        mediaUrl: "/whispers.jpg",
+        mediaUrl: "/whispers2.png",
       },
     ],
   },
@@ -41,7 +43,9 @@ export const events: Event[] = [
     time: "3:00 - 4:30 PM",
     building: "Community Music Center",
     address: "544 Capp Street San Francisco, CA 94110",
-    description: "For the first time in Bay Area history, the internationally acclaimed Maestro Sam Udjo brings the majestic sounds of the Angklung live from West Java, Indonesia. Witness how the Angklung — once rooted in ritual — now speaks fluently in Western musical scales, opening new possibilities in ensemble and solo performance.",
+    description: `For the first time in Bay Area history, the internationally acclaimed Maestro Sam Udjo brings the majestic sounds of the Angklung live from West Java, Indonesia. \n
+                Explore the transformation of Angklung — from its idiophonic, diatonic origins to its reimagining as a chromatic instrument in classical performance. From there, dive into its tonal structure, tuning systems, and role in global music innovation. \n
+                A must-attend for music scholars, educators, and artists — this is a moment in musical history you won't want to miss.`,
     media: [
       {
         title: "Media 1",

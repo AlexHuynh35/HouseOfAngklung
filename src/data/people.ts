@@ -32,24 +32,18 @@ export const people: Person[] = [
   },
   {
     id: 5,
-    name: "Octary Azis-Mukhtar",
-    position: "Board of Director",
-    imageUrl: "/Octary.jpg",
-  },
-  {
-    id: 6,
     name: "Irma Ibrahim",
     position: "Board Member",
     imageUrl: "/Irma.jpg",
   },
   {
-    id: 7,
+    id: 6,
     name: "Diah Brinck",
     position: "Treasurer",
     imageUrl: "/Diah.jpg",
   },
   {
-    id: 8,
+    id: 7,
     name: "Maestro Sam Udjo",
     position: "Artistic Advisor & Guardian of the Angklung Legacy",
     imageUrl: "/Sam.jpg",

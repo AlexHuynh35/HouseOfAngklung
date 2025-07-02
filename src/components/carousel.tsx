@@ -24,14 +24,14 @@ export default function MediaCarousel({ media }: MediaCarouselProps) {
   const item = media[current];
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto aspect-video overflow-hidden rounded-lg shadow-md bg-black">
+    <div className="relative w-full max-w-3xl mx-auto aspect-video overflow-hidden rounded-lg shadow-md bg-gray-100">
       <div className="absolute inset-0 flex items-center justify-center">
         {item.isImage ? (
           <Image
             src={item.mediaUrl}
             alt={item.title}
             fill
-            className="object-cover rounded-lg"
+            className="object-contain rounded-lg"
           />
         ) : item.onYouTube ? (
           <iframe
