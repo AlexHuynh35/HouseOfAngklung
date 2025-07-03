@@ -32,9 +32,9 @@ export const people: Person[] = [
   },
   {
     id: 5,
-    name: "Irma Ibrahim",
-    position: "Board Member",
-    imageUrl: "/Irma.jpg",
+    name: "Savannah Walter",
+    position: "Board Director",
+    imageUrl: "/Savannah.jpg",
   },
   {
     id: 6,
