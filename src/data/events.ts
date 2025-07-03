@@ -19,7 +19,7 @@ export type Event = {
 export const events: Event[] = [
   {
     id: 1,
-    title: "Angklung Whispers: The Untold Story by Sylvanna Nelwan",
+    title: "Angklung Whispers: The Untold Story",
     date: "2024-10-26",
     time: "3:00 - 5:00 PM",
     building: "Community Music Center",
