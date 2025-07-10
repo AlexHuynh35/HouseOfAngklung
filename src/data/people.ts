@@ -44,6 +44,12 @@ export const people: Person[] = [
   },
   {
     id: 7,
+    name: "Ana Neufeld Weaver",
+    position: "Board Member",
+    imageUrl: "/Ana.jpg",
+  },
+  {
+    id: 8,
     name: "Maestro Sam Udjo",
     position: "Artistic Advisor & Guardian of the Angklung Legacy",
     imageUrl: "/Sam.jpg",
