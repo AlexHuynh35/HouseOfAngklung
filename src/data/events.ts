@@ -40,7 +40,7 @@ export const events: Event[] = [
     id: 2,
     title: "Angklung Musical Maestro Sam Udjo Makes His Historic Bay Area Debut",
     date: "2025-07-20",
-    time: "3:00 - 4:30 PM",
+    time: "3:30 - 5:00 PM",
     building: "Community Music Center",
     address: "544 Capp Street San Francisco, CA 94110",
     description: `For the first time in Bay Area history, the internationally acclaimed Maestro Sam Udjo brings the majestic sounds of the Angklung live from West Java, Indonesia. \n
