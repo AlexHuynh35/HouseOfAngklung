@@ -56,7 +56,7 @@ The project is complete, but future additions are planned to expand the educatio
 
 - **Color Palette**:
   - Primary: Brown
-  - Background: Off White and Gray
+  - Background: Off White
   - Text: Black and Dark Brown
 
 - **Mobile Friendliness**:
@@ -76,5 +76,3 @@ The project is complete, but future additions are planned to expand the educatio
 ## Acknowledgments
 
 Many thanks to **Saung Angklung of San Francisco** for the opportunity to build this website!
-
----

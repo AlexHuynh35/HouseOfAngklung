@@ -9,7 +9,11 @@ export default function UpcomingEvent() {
       {upcomingEvents ? (
         <EventCard {...upcomingEvents} />
       ) : (
-        <p>No upcoming events found</p>
+        <div className="max-w-4xl mx-auto text-center my-10 px-4">
+          <p className="text-gray-700 text-md md:text-lg">
+            No upcoming events found
+          </p>
+        </div>
       )}
     </div>
   );
