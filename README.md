@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Saung Angklung of San Francisco - Angklung Educational Website
 
-## Getting Started
+**Live Site**: https://www.angklungsf.com/
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Summary
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This website was developed for **Saung Angklung of San Francisco**, an organization dedicated to preserving and promoting the cultural heritage of the Angklung. The site provides a centralized place to:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Learn about the history of the Angklung, a traditional Indonesian bamboo instrument
+- Explore upcoming and past events relating to the Angklung
+- Understand the mission and people behind the organization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project is complete, but future additions are planned to expand the educational content.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Home Page**
+  - Highlights the next upcoming event
+  - Displays interesting facts about the Angklung
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **About Page**
+  - Displays the organization's mission statement
+  - Introduces the people involved in the organization
 
-## Deploy on Vercel
+- **Events Page**
+  - Lists all past events with details
+  - Highlights the next upcoming event
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Learning Pages**
+  - Musical Evolution: How the Angklung transformed over time
+  - Maestro Sam Udjo: Legacy of and performance by the lengendary figure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Sitewide Components**
+  - Navbar with clear routing to every page
+  - Footer with social links
+  - Hero image on every sections for visual appeal
+
+---
+
+## Tech Stack
+
+| Category            | Tools / Frameworks                                 |
+|---------------------|----------------------------------------------------|
+| **Frontend**        | React, TypeScript, TailwindCSS                     |
+| **Build Tools**     | Next.js                                            |
+| **Deployment**      | Vercel                                             |
+| **Version Control** | Git + GitHub                                       |
+
+---
+
+## Design Notes
+
+- **Color Palette**:
+  - Primary: Brown
+  - Background: Off White and Gray
+  - Text: Black and Dark Brown
+
+- **Mobile Friendliness**:
+  - Fully responsive layout
+  - Touch-friendly navigation and image scaling
+
+---
+
+## Future Additions
+
+- Additional educational pages
+- Multilingual support
+- Search functionality for events and content
+
+---
+
+## Acknowledgments
+
+Many thanks to **Saung Angklung of San Francisco** for the opportunity to build this website!
+
+---
