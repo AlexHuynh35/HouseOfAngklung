@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="w-full">
       <div className="relative w-full h-[300px] md:h-[350px]">
         <Image
-          src="/angklung.jpg"
+          src="/media/general/angklung.jpg"
           alt="Hero background"
           fill
           className="object-cover object-center"

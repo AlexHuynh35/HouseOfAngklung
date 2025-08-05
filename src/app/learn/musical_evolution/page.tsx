@@ -5,7 +5,7 @@ export default function MusicalEvolutionPage() {
     <section className="p-6">
       <LearningSection
         title="The Musical Evolution of the Angklung"
-        imageUrl="/angklung2.jpg"
+        imageUrl="/media/general/angklung2.jpg"
         text={[
             "The angklung is a bamboo musical instrument known for its distinctive resonance and ensemble-based performance. As an idiophone, it consists of tuned bamboo tubes mounted on a frame. When shaken, each instrument produces a single pitch, requiring coordinated group playing to create melodies and harmonic structures. Its design inherently emphasizes collaboration and musical unity.",
             "Originally limited to pentatonic tones, the angklung underwent a significant transformation in the 20th century when it was adapted to follow the Western diatonic scale. This breakthrough, pioneered by Daeng Soetigna, marked the beginning of the angklung’s integration into global musical frameworks. Further innovation led to the development of the chromatic angklung, expanding its tonal range and enabling performance of complex Western classical pieces and full-scale harmonic progressions.",

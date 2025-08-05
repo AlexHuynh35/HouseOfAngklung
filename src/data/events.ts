@@ -32,7 +32,7 @@ export const events: Event[] = [
         title: "Media 1",
         isImage: true,
         onYouTube: false,
-        mediaUrl: "/whispers3.png",
+        mediaUrl: "/media/events/whispers/whispers3.png",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const events: Event[] = [
         title: "Media 1",
         isImage: true,
         onYouTube: false,
-        mediaUrl: "/Sam.jpg",
+        mediaUrl: "/media/people/Sam.jpg",
       },
       {
         title: "Media 2",

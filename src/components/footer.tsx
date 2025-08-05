@@ -60,7 +60,7 @@ const Footer = () => {
           <div className="flex justify-center space-x-4">
             <Link href="#" className="hover:opacity-80" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/Facebook.jpg"
+                src="/media/icons/Facebook.jpg"
                 alt="Facebook"
                 width={32}
                 height={32}
@@ -69,7 +69,7 @@ const Footer = () => {
             </Link>
             <Link href="#" className="hover:opacity-80" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/Instagram.jpg"
+                src="/media/icons/Instagram.jpg"
                 alt="Instagram"
                 width={32}
                 height={32}
@@ -78,7 +78,7 @@ const Footer = () => {
             </Link>
             <Link href="#" className="hover:opacity-80" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/Youtube.jpg"
+                src="/media/icons/Youtube.jpg"
                 alt="YouTube"
                 width={32}
                 height={32}
@@ -87,7 +87,7 @@ const Footer = () => {
             </Link>
             <Link href="#" className="hover:opacity-80" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/LinkedIn.jpg"
+                src="/media/icons/LinkedIn.jpg"
                 alt="LinkedIn"
                 width={32}
                 height={32}

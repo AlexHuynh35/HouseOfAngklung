@@ -16,7 +16,7 @@ export default function AboutPage() {
       <FactCard
         title="Our Mission"
         description="We strive to elevate the Angklung as a unique, one-of-a-kind bamboo musical genre, showcasing its distinctive sound and versatility through comprehensive educational initiatives and performance opportunities."
-        imageUrl="/mission.png"
+        imageUrl="/media/icons/mission.png"
         onLeft={true}
         hasTitle={true}
         isFit={true}
@@ -25,7 +25,7 @@ export default function AboutPage() {
       <FactCard
         title="Our Vision"
         description="We aim to position the Angklung as a prominent genre within the global music landscape, encouraging innovation and collaborative practices while securing its lasting significance in contemporary musical expression."
-        imageUrl="/vision.png"
+        imageUrl="/media/icons/vision.png"
         onLeft={false}
         hasTitle={true}
         isFit={true}
