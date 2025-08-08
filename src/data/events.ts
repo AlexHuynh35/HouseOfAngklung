@@ -14,6 +14,8 @@ export type Event = {
   address: string;
   description: string;
   media: MediaItem[];
+  path: string;
+  photos: number[];
 };
 
 export const events: Event[] = [
@@ -35,6 +37,8 @@ export const events: Event[] = [
         mediaUrl: "/media/events/whispers/whispers3.png",
       },
     ],
+    path: "media/events/whispers",
+    photos: [],
   },
   {
     id: 2,
@@ -60,6 +64,8 @@ export const events: Event[] = [
         mediaUrl: "https://www.youtube.com/embed/E4Bq1xR_9sE?si=DRh8Dcbfg0y0fH1K",
       },
     ],
+    path: "media/events/samudjo",
+    photos: [2, 5, 7, 10, 12, 13],
   }
 ];
 
