@@ -14,6 +14,7 @@ export type Event = {
   address: string;
   description: string;
   media: MediaItem[];
+  hasGallery: boolean;
   path: string;
   photos: number[];
 };
@@ -37,6 +38,7 @@ export const events: Event[] = [
         mediaUrl: "/media/events/whispers/whispers3.png",
       },
     ],
+    hasGallery: false,
     path: "media/events/whispers",
     photos: [],
   },
@@ -47,9 +49,9 @@ export const events: Event[] = [
     time: "3:30 - 5:00 PM",
     building: "Community Music Center",
     address: "544 Capp Street San Francisco, CA 94110",
-    description: `For the first time in Bay Area history, the internationally acclaimed Maestro Sam Udjo brings the majestic sounds of the Angklung live from West Java, Indonesia. \n
-                Explore the transformation of Angklung — from its idiophonic, diatonic origins to its reimagining as a chromatic instrument in classical performance. From there, dive into its tonal structure, tuning systems, and role in global music innovation. \n
-                A must-attend for music scholars, educators, and artists — this is a moment in musical history you won't want to miss.`,
+    description: `For the first time in Bay Area history, the internationally acclaimed Maestro Sam Udjo brought the majestic sounds of the Angklung live from West Java, Indonesia. \n
+                The event explored the transformation of the Angklung - from its idiophonic, diatonic origins to its reimagining as a chromatic instrument in classical performance. It also delved into its tonal structure, tuning systems, and role in global music innovation. \n
+                A landmark experience for music scholars, educators, and artists - it marked a moment in musical history not to be forgotten.`,
     media: [
       {
         title: "Media 1",
@@ -64,6 +66,7 @@ export const events: Event[] = [
         mediaUrl: "https://www.youtube.com/embed/E4Bq1xR_9sE?si=DRh8Dcbfg0y0fH1K",
       },
     ],
+    hasGallery: true,
     path: "media/events/samudjo",
     photos: [2, 5, 7, 10, 12, 13],
   }

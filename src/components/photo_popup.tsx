@@ -16,13 +16,16 @@ const PhotosPopup = ({ eventName, path, selectedImages }: PhotosPopupProps) => {
   const firstFive = imageUrls.slice(0, 5);
 
   return (
-    <div>
-      <button
-        className="bg-brown-600 text-white px-4 py-2 rounded hover:bg-brown-700"
-        onClick={() => setIsOpen(true)}
-      >
-        View Photos
-      </button>
+    <div className="mb-1">
+      <h1 className="text-gray-600 inline-flex items-center gap-2 max-h-[2.5rem]">
+        <span><strong>Missed the event?</strong></span>
+        <button
+          className="bg-brown-600 text-white px-3 py-1 rounded-md hover:bg-brown-700 transition-transform transform hover:scale-105"
+          onClick={() => setIsOpen(true)}
+        >
+          View Photo Gallery
+        </button>
+      </h1>
 
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">

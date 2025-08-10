@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function ScrollableDescription({ description }: { description: string }) {
+export default function ScrollableDescription({ description, show }: { description: string, show: boolean }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isAtBottom, setIsAtBottom] = useState(false);
 
@@ -27,9 +27,9 @@ export default function ScrollableDescription({ description }: { description: st
     <div className="relative">
       <div
         ref={scrollRef}
-        className="max-h-30 overflow-y-auto pr-2"
+        className={`overflow-y-auto ${show ? "max-h-30" : "max-h-40"}`}
       >
-        <p className="text-gray-800 whitespace-pre-line">{description}</p>
+        <p className="text-gray-600 whitespace-pre-line">{description}</p>
       </div>
       {!isAtBottom && (
         <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent pointer-events-none transition-opacity duration-300" />

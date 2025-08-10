@@ -16,11 +16,12 @@ type EventCardProps = {
   address: string;
   description: string;
   media: MediaItem[];
+  hasGallery: boolean;
   path: string;
   photos: number[];
 };
 
-const EventCard = ({ title, date, time, building, address, description, media, path, photos }: EventCardProps) => {
+const EventCard = ({ title, date, time, building, address, description, media, hasGallery, path, photos }: EventCardProps) => {
   return (
     <div className="max-w-5xl mx-auto my-8 flex flex-col md:flex-row md:items-center bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
       <div className="w-full md:w-1/2 p-4">
@@ -28,20 +29,28 @@ const EventCard = ({ title, date, time, building, address, description, media, p
       </div>
 
       <div className="md:w-1/2 p-6 flex flex-col justify-center">
-        <h2 className="text-2xl font-bold mb-2 text-brown-800">{title}</h2>
+        <h2 className="text-2xl font-bold mb-1 flex items-center text-brown-800 min-h-[3.5rem]">{title}</h2>
+        {hasGallery ? (
+          <PhotosPopup
+            eventName={title}
+            path={path}
+            selectedImages={photos}
+          />
+        ) : (
+          <div className="mb-1"></div>
+        )}
         <p className="text-gray-600 mb-1"><strong>Date:</strong> {formatDate(date)}</p>
         <p className="text-gray-600 mb-1"><strong>Time:</strong> {time}</p>
-        <p className="text-gray-600 mb-3">
+        <p className="text-gray-600 mb-1">
           <strong>Location:</strong><br />
           <span className="pl-4 block">{building}</span>
           <span className="pl-4 text-sm text-gray-600">{address}</span>
         </p>
-        <PhotosPopup 
-          eventName={title}
-          path={path}
-          selectedImages={photos}
+        <p className="text-gray-600 mb-1"><strong>Description:</strong></p>
+        <ScrollableDescription
+          description={description}
+          show={hasGallery}
         />
-        <ScrollableDescription description={description} />
       </div>
     </div>
   );
