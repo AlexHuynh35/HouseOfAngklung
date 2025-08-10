@@ -32,7 +32,7 @@ export default function Home() {
         isFit={false}
       />
 
-      <SectionTitle title="Upcoming Event" onLeft={true} />
+      <SectionTitle title="Check Out This Event" onLeft={true} />
 
       <UpcomingEvent />
     </section>

@@ -27,7 +27,7 @@ export default async function EventsPage({ params }: EventsPageProps) {
         </h1>
       </div>
 
-      <SectionTitle title="Upcoming Event" onLeft={true} />
+      <SectionTitle title="Check Out This Event" onLeft={true} />
 
       <UpcomingEvent />
 

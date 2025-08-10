@@ -81,3 +81,13 @@ export function getUpcomingEvent(): Event | null {
 
   return upcoming[0] || null;
 }
+
+export function getMostRecentEvent(): Event | null {
+  const now = new Date();
+
+  const pastEvents = events
+    .filter(event => new Date(event.date) <= now)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  return pastEvents[0] || null;
+}
