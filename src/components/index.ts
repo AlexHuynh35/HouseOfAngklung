@@ -12,3 +12,5 @@ export { default as VideoCard } from "./video";
 export { default as MediaCarousel } from "./carousel";
 export { default as ScrollableDescription } from "./scroll";
 export { default as PhotosPopup } from "./photo_popup";
+export { default as Gallery } from "./gallery";
+export { default as Masonry } from "./masonry";

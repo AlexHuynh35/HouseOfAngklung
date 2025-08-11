@@ -50,7 +50,7 @@ const PhotosPopup = ({ eventName, path, selectedImages }: PhotosPopupProps) => {
             {/* View All Button */}
             <div className="mt-4 flex justify-center">
               <button className="bg-brown-600 text-white px-3 py-1 rounded-md hover:bg-brown-700 transition-transform transform hover:scale-105">
-                <Link href="/gallery/maestro_sam_udjo">View All Photos</Link>
+                <Link href="/gallery/maestro_sam_udjo_event">View All Photos</Link>
               </button>
             </div>
 
