@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { eventPhotoData } from "@/utils/eventPhotoData";
@@ -13,7 +14,7 @@ type PhotosPopupProps = {
 const PhotosPopup = ({ eventName, path, selectedImages }: PhotosPopupProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const imageUrls = eventPhotoData(selectedImages, path);
-  const firstFive = imageUrls.slice(0, 5);
+  const firstSix = imageUrls.slice(0, 6);
 
   return (
     <div className="mb-1">
@@ -28,21 +29,28 @@ const PhotosPopup = ({ eventName, path, selectedImages }: PhotosPopupProps) => {
       </h1>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg max-w-3xl w-full shadow-lg relative">
-            <h2 className="text-2xl font-bold mb-4">{eventName} Photos</h2>
+            <h2 className="text-2xl text-brown-800 font-bold mb-4 text-center">{eventName} Photos</h2>
 
-            {/* First 5 images */}
+            {/* First 6 images */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {firstFive.map((src, idx) => (
-                <img key={idx} src={src} alt={`${eventName} ${idx + 1}`} className="w-full h-auto rounded" />
+              {firstSix.map((src, idx) => (
+                <div key={idx} className="relative w-full h-48">
+                  <Image
+                    src={src}
+                    alt={`event${idx + 1}`}
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
               ))}
             </div>
 
             {/* View All Button */}
-            <div className="mt-4">
-              <button className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
-                <Link href="/gallery/maestro_sam_udjo">View All</Link>
+            <div className="mt-4 flex justify-center">
+              <button className="bg-brown-600 text-white px-3 py-1 rounded-md hover:bg-brown-700 transition-transform transform hover:scale-105">
+                <Link href="/gallery/maestro_sam_udjo">View All Photos</Link>
               </button>
             </div>
 
