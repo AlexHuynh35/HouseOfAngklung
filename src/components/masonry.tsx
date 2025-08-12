@@ -24,13 +24,13 @@ const Masonry = ({ path, numPhotos }: MasonryProps) => {
       {imageUrls.map((src, idx) => (
         <div
           key={idx}
-          className={`${chosenBig.has(idx) ? "md:col-span-2 md:row-span-2" : ""} relative bg-white shadow-md rounded-lg overflow-hidden border border-gray-200`}
+          className={`${chosenBig.has(idx) ? "md:col-span-2 md:row-span-2" : ""} relative bg-white shadow-md rounded-lg overflow-hidden border border-gray-200 transition-transform transform hover:scale-102`}
         >
           <Image
             src={src}
             alt={`photo-${idx}`}
             fill
-            className="object-cover rounded-md p-2 pb-8 transition-transform transform hover:scale-102"
+            className="object-cover rounded-md p-2 pb-8"
           />
         </div>
       ))}

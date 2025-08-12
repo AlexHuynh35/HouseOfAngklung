@@ -31,6 +31,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-3">
               <Link href="/events" className="hover:underline">Events</Link>
             </h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/gallery/maestro_sam_udjo_event" className="hover:underline">Maestro Sam Udjo in SF</Link>
+              </li>
+            </ul>
           </div>
 
           {/* Learning: History */}
