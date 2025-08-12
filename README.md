@@ -19,7 +19,7 @@ The project is complete, but future additions are planned to expand the educatio
 ## Features
 
 - **Home Page**
-  - Highlights the next upcoming event
+  - Highlights the latest or upcoming event
   - Displays interesting facts about the Angklung
 
 - **About Page**
@@ -28,7 +28,10 @@ The project is complete, but future additions are planned to expand the educatio
 
 - **Events Page**
   - Lists all past events with details
-  - Highlights the next upcoming event
+  - Highlights the latest or upcoming event
+
+- **Gallery Pages**
+  - Maestro Sam Udjo in San Francisco event
 
 - **Learning Pages**
   - Musical Evolution: How the Angklung transformed over time
