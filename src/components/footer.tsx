@@ -31,6 +31,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-3">
               <Link href="/events" className="hover:underline">Events</Link>
             </h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/gallery/maestro_sam_udjo_event" className="hover:underline">Maestro Sam Udjo in SF</Link>
+              </li>
+            </ul>
           </div>
 
           {/* Learning: History */}
@@ -60,7 +65,7 @@ const Footer = () => {
           <div className="flex justify-center space-x-4">
             <Link href="#" className="hover:opacity-80" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/Facebook.jpg"
+                src="/media/icons/Facebook.jpg"
                 alt="Facebook"
                 width={32}
                 height={32}
@@ -69,7 +74,7 @@ const Footer = () => {
             </Link>
             <Link href="#" className="hover:opacity-80" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/Instagram.jpg"
+                src="/media/icons/Instagram.jpg"
                 alt="Instagram"
                 width={32}
                 height={32}
@@ -78,7 +83,7 @@ const Footer = () => {
             </Link>
             <Link href="#" className="hover:opacity-80" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/Youtube.jpg"
+                src="/media/icons/Youtube.jpg"
                 alt="YouTube"
                 width={32}
                 height={32}
@@ -87,7 +92,7 @@ const Footer = () => {
             </Link>
             <Link href="#" className="hover:opacity-80" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/LinkedIn.jpg"
+                src="/media/icons/LinkedIn.jpg"
                 alt="LinkedIn"
                 width={32}
                 height={32}

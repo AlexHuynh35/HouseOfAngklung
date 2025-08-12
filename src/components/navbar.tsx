@@ -37,7 +37,7 @@ const Navbar = () => {
 
           <div className="w-8 h-8 rounded-full overflow-hidden">
             <Image
-              src="/angklung2.jpg"
+              src="/media/general/angklung2.jpg"
               alt="Angklung"
               width={32}
               height={32}

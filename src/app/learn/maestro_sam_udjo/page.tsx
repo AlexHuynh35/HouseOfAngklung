@@ -5,7 +5,7 @@ export default function MaestroSamUdjoPage() {
     <section className="p-6">
       <LearningSection
         title="Maestro Sam Udjo"
-        imageUrl="/Sam.jpg"
+        imageUrl="/media/people/Sam.jpg"
         text={[
             "Sam Udjo is the director and cultural ambassador of Saung Angklung Udjo (SAU), an internationally acclaimed center for traditional Indonesian music based in Bandung, West Java. He is the son of the legendary Mang Udjo and has carried forward his father's legacy of Angklung innovation and cultural education.",
             "Sam Udjo has represented Indonesia around the world, conducting performances, workshops, and cultural exchanges in:",
@@ -30,7 +30,7 @@ export default function MaestroSamUdjoPage() {
       <VideoCard
         title="Performance 2"
         description=""
-        videoUrl="/performance.mp4"
+        videoUrl="/media/general/performance.mp4"
         onYouTube={false}
       />
     </section>
