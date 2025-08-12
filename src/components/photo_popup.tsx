@@ -8,12 +8,12 @@ import { eventPhotoData } from "@/utils/eventPhotoData";
 type PhotosPopupProps = {
   eventName: string;
   path: string;
-  selectedImages: number[];
+  numPhotos: number;
 };
 
-const PhotosPopup = ({ eventName, path, selectedImages }: PhotosPopupProps) => {
+const PhotosPopup = ({ eventName, path, numPhotos }: PhotosPopupProps) => {
   const [isOpen, setIsOpen] = useState(false);
-  const imageUrls = eventPhotoData(selectedImages, path);
+  const imageUrls = eventPhotoData(numPhotos, path);
   const firstSix = imageUrls.slice(0, 6);
 
   return (

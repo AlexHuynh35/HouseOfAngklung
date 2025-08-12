@@ -1,6 +1,7 @@
-export function eventPhotoData(selectedImages: number[], path: string): string[] {
-  return selectedImages.map(num => {
-    const paddedNum = String(num).padStart(5, "0");
-    return `/${path}/Angklung${paddedNum}.jpeg`;
-  });
+export function eventPhotoData(numImages: number, path: string): string[] {
+  const pathsWithFile = new Array<string>;
+  for (let i = 0; i < numImages; i++) {
+    pathsWithFile.push(`/${path}/Angklung${i}.jpeg`);
+  }
+  return pathsWithFile;
 }

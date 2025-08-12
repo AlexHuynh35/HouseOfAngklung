@@ -3,11 +3,11 @@ import { eventPhotoData } from "@/utils/eventPhotoData";
 
 type MasonryProps = {
   path: string;
-  photos: number[];
+  numPhotos: number;
 };
 
-const Masonry = ({ path, photos }: MasonryProps) => {
-  const imageUrls = eventPhotoData(photos, path);
+const Masonry = ({ path, numPhotos }: MasonryProps) => {
+  const imageUrls = eventPhotoData(numPhotos, path);
   const chosenBig = new Set();
   for (let i = 0; i < imageUrls.length; i += 3) {
     if (Math.random() < 0.6) {

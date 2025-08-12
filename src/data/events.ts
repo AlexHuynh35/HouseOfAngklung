@@ -16,7 +16,7 @@ export type Event = {
   media: MediaItem[];
   hasGallery: boolean;
   path: string;
-  photos: number[];
+  numPhotos: number;
 };
 
 export const events: Event[] = [
@@ -40,7 +40,7 @@ export const events: Event[] = [
     ],
     hasGallery: false,
     path: "media/events/whispers",
-    photos: [],
+    numPhotos: 0,
   },
   {
     id: 2,
@@ -68,7 +68,7 @@ export const events: Event[] = [
     ],
     hasGallery: true,
     path: "media/events/samudjo",
-    photos: [2, 5, 7, 10, 12, 13, 15, 30, 35, 39, 42, 63, 70, 74],
+    numPhotos: 65,
   }
 ];
 

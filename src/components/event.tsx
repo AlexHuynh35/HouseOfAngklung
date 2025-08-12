@@ -18,10 +18,10 @@ type EventCardProps = {
   media: MediaItem[];
   hasGallery: boolean;
   path: string;
-  photos: number[];
+  numPhotos: number;
 };
 
-const EventCard = ({ title, date, time, building, address, description, media, hasGallery, path, photos }: EventCardProps) => {
+const EventCard = ({ title, date, time, building, address, description, media, hasGallery, path, numPhotos }: EventCardProps) => {
   return (
     <div className="max-w-5xl mx-auto my-8 flex flex-col md:flex-row md:items-center bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
       <div className="w-full md:w-1/2 p-4">
@@ -34,7 +34,7 @@ const EventCard = ({ title, date, time, building, address, description, media, h
           <PhotosPopup
             eventName={title}
             path={path}
-            selectedImages={photos}
+            numPhotos={numPhotos}
           />
         ) : (
           <div className="mb-1"></div>

@@ -13,7 +13,7 @@ export default function MaestroSamUdjoEventPage() {
 
       <Masonry
         path={event.path}
-        photos={event.photos}
+        numPhotos={event.numPhotos}
       />
     </section>
   );
