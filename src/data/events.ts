@@ -68,7 +68,7 @@ export const events: Event[] = [
     ],
     hasGallery: true,
     path: "media/events/samudjo",
-    photos: [2, 5, 7, 10, 12, 13],
+    photos: [2, 5, 7, 10, 12, 13, 15, 30, 35, 39, 42, 63, 70, 74],
   }
 ];
 
