@@ -29,8 +29,8 @@ const PhotosPopup = ({ eventName, path, numPhotos }: PhotosPopupProps) => {
       </h1>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg max-w-3xl w-full shadow-lg relative">
+        <div className="fixed inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center z-50 p-4">
+          <div className="bg-white p-6 rounded-lg max-w-3xl w-full shadow-lg relative max-h-[90vh] overflow-y-auto">
             <h2 className="text-2xl text-brown-800 font-bold mb-4 text-center">{eventName} Photos</h2>
 
             {/* First 6 images */}
