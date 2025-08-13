@@ -5,13 +5,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { eventPhotoData } from "@/utils/eventPhotoData";
 
-type PhotosPopupProps = {
+type GalleryPopupProps = {
   eventName: string;
   path: string;
   numPhotos: number;
 };
 
-const PhotosPopup = ({ eventName, path, numPhotos }: PhotosPopupProps) => {
+const GalleryPopup = ({ eventName, path, numPhotos }: GalleryPopupProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const imageUrls = eventPhotoData(numPhotos, path);
   const firstSix = imageUrls.slice(0, 6);
@@ -68,4 +68,4 @@ const PhotosPopup = ({ eventName, path, numPhotos }: PhotosPopupProps) => {
   );
 };
 
-export default PhotosPopup;
+export default GalleryPopup;
