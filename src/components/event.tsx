@@ -1,5 +1,5 @@
 import { formatDate } from "@/utils/formatDate";
-import { MediaCarousel, ScrollableDescription, PhotosPopup } from "@/components";
+import { MediaCarousel, ScrollableDescription, GalleryPopup } from "@/components";
 
 type MediaItem = {
   title: string;
@@ -31,7 +31,7 @@ const EventCard = ({ title, date, time, building, address, description, media, h
       <div className="md:w-1/2 p-6 flex flex-col justify-center">
         <h2 className="text-2xl font-bold mb-1 flex items-center text-brown-800 min-h-[3.5rem]">{title}</h2>
         {hasGallery ? (
-          <PhotosPopup
+          <GalleryPopup
             eventName={title}
             path={path}
             numPhotos={numPhotos}
