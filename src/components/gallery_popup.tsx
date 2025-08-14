@@ -18,13 +18,13 @@ const GalleryPopup = ({ eventName, path, numPhotos }: GalleryPopupProps) => {
 
   return (
     <div className="mb-1">
-      <h1 className="text-gray-600 inline-flex items-center gap-2 max-h-[2.5rem]">
-        <span><strong>Missed the event?</strong></span>
+      <h1 className="text-gray-600 inline-flex items-center gap-1 sm:gap-2 max-h-[2.5rem]">
+        <span><strong>Missed event?</strong></span>
         <button
-          className="bg-brown-600 text-white px-3 py-1 rounded-md hover:bg-brown-700 transition-transform transform hover:scale-105"
+          className="bg-brown-600 text-white px-2 py-1 rounded-md hover:bg-brown-700 transition-transform transform hover:scale-105"
           onClick={() => setIsOpen(true)}
         >
-          View Photo Gallery
+          View Gallery
         </button>
       </h1>
 

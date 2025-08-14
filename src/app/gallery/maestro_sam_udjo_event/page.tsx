@@ -11,6 +11,10 @@ export default function MaestroSamUdjoEventPage() {
 
       <SectionTitle title="Photo Gallery" onLeft={true} />
 
+      <div className="max-w-4xl mx-auto text-center mb-10 px-4">
+        <h1 className="text-gray-700 text-xl md:text-2xl">Taken By: <span className="font-bold">Satrio Mahanto</span></h1>
+      </div>
+
       <Masonry
         path={event.path}
         numPhotos={event.numPhotos}
