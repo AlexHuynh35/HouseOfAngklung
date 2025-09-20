@@ -27,7 +27,7 @@ export const people: Person[] = [
   {
     id: 4,
     name: "Yulda Asmara",
-    position: "Public Relations Manager",
+    position: "Co-Founder",
     imageUrl: "/media/people/Yulda.jpg",
   },
   {
@@ -38,6 +38,12 @@ export const people: Person[] = [
   },
   {
     id: 6,
+    name: "Sylvanna Nelwan",
+    position: "Program Music Director",
+    imageUrl: "/media/people/Sylvanna.jpg",
+  },
+  {
+    id: 7,
     name: "Maestro Sam Udjo",
     position: "Artistic Advisor & Guardian of the Angklung Legacy",
     imageUrl: "/media/people/Sam.jpg",

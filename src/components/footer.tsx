@@ -7,7 +7,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-9 text-center">
         {/* Title / Organization Info */}
         <div>
-          <h2 className="text-lg font-semibold">Saung Angklung of San Francisco</h2>
+          <h2 className="text-lg font-semibold mb-3">Saung Angklung of San Francisco</h2>
+          <h2 className="text-md">
+            <span>Website by </span>
+            <Link href="https://www.linkedin.com/in/alexhuynh35" target="_blank" className="hover:underline">Alex Huynh</Link>
+          </h2>
         </div>
 
         {/* Navigation Links */}
