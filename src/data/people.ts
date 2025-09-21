@@ -32,18 +32,24 @@ export const people: Person[] = [
   },
   {
     id: 5,
+    name: "Ana Neufeld Weaver",
+    position: "Board Director",
+    imageUrl: "/media/people/Ana.jpg",
+  },
+  {
+    id: 6,
     name: "Diah Brinck",
     position: "Treasurer",
     imageUrl: "/media/people/Diah.jpg",
   },
   {
-    id: 6,
-    name: "Sylvanna Nelwan",
+    id: 7,
+    name: "Sylvanna Ann",
     position: "Program Music Director",
     imageUrl: "/media/people/Sylvanna.jpg",
   },
   {
-    id: 7,
+    id: 8,
     name: "Maestro Sam Udjo",
     position: "Artistic Advisor & Guardian of the Angklung Legacy",
     imageUrl: "/media/people/Sam.jpg",
