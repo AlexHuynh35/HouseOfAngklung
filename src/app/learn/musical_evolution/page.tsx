@@ -1,4 +1,4 @@
-import { LearningSection } from "@/components";
+import { LearningSection, SectionTitle, VideoCard } from "@/components";
 
 export default function MusicalEvolutionPage() {
   return (
@@ -12,6 +12,15 @@ export default function MusicalEvolutionPage() {
             "Today, the angklung can be performed in combination with orchestras, wind ensembles, choirs, jazz bands, and modern instruments. Its pitch precision and flexible arrangement make it suitable for a wide variety of genres and musical traditions. Angklung orchestras now regularly feature in international music festivals and academic institutions, performing everything from Baroque to contemporary works.",
             "In 2010, the angklung was recognized by UNESCO on its Representative List of the Intangible Cultural Heritage of Humanity—not solely for its origins, but for its enduring musical relevance and its capacity to evolve. The angklung stands today as a fully realized concert instrument, bridging traditional craftsmanship with modern musical innovation across diverse performance contexts."
         ]}
+      />
+
+      <SectionTitle title="History of Angklung" onLeft={true} />
+
+      <VideoCard
+        title="Indonesian Angklung"
+        description=""
+        videoUrl="https://www.youtube.com/embed/CNhLfbH3Nlc?si=54cMneP55s8AoR1k"
+        onYouTube={true}
       />
     </section>
   );
