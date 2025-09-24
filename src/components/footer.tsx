@@ -37,7 +37,10 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/gallery/maestro_sam_udjo_event" className="hover:underline">Maestro Sam Udjo in SF</Link>
+                <Link href="/event/maestro_sam_udjo" className="hover:underline">Maestro Sam Udjo in SF</Link>
+              </li>
+              <li>
+                <Link href="/event/angklung_whispers" className="hover:underline">Angklung Whispers</Link>
               </li>
             </ul>
           </div>

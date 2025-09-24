@@ -1,5 +1,6 @@
 import { formatDate } from "@/utils/formatDate";
 import { MediaCarousel, ScrollableDescription, GalleryPopup } from "@/components";
+import Link from "next/link";
 
 type MediaItem = {
   title: string;
@@ -9,6 +10,7 @@ type MediaItem = {
 };
 
 type EventCardProps = {
+  slug: string;
   title: string;
   date: string;
   time: string;
@@ -21,7 +23,7 @@ type EventCardProps = {
   numPhotos: number;
 };
 
-const EventCard = ({ title, date, time, building, address, description, media, hasGallery, path, numPhotos }: EventCardProps) => {
+const EventCard = ({ slug, title, date, time, building, address, description, media, hasGallery, path, numPhotos }: EventCardProps) => {
   return (
     <div className="max-w-5xl mx-auto my-8 flex flex-col md:flex-row md:items-center bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
       <div className="w-full md:w-1/2 p-4">
@@ -29,7 +31,9 @@ const EventCard = ({ title, date, time, building, address, description, media, h
       </div>
 
       <div className="md:w-1/2 p-6 flex flex-col justify-center">
-        <h2 className="text-2xl font-bold mb-1 flex items-center text-brown-800 min-h-[3.5rem]">{title}</h2>
+        <h2 className="text-2xl font-bold mb-1 flex items-center text-brown-800 min-h-[3.5rem]">
+          <Link href={`/event/${slug}`} className="hover:underline">{title}</Link>
+        </h2>
         {hasGallery ? (
           <GalleryPopup
             eventName={title}

@@ -1,4 +1,4 @@
-import { LearningSection, SectionTitle, VideoCard } from "@/components";
+import { LearningSection, SectionTitle, VideoCard, PDFCard } from "@/components";
 
 export default function MaestroSamUdjoPage() {
   return (
@@ -33,6 +33,10 @@ export default function MaestroSamUdjoPage() {
         videoUrl="/media/general/performance.mp4"
         onYouTube={false}
       />
+
+      <SectionTitle title="Sam Udjo's SF Visit" onLeft={false} />
+
+      <PDFCard pdfUrl="/media/events/samudjo/AngklungReport.pdf" />
     </section>
   );
 }

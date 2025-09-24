@@ -7,6 +7,7 @@ type MediaItem = {
 
 export type Event = {
   id: number;
+  slug: string;
   title: string;
   date: string;
   time: string;
@@ -14,6 +15,7 @@ export type Event = {
   address: string;
   description: string;
   media: MediaItem[];
+  readings: string[];
   hasGallery: boolean;
   path: string;
   numPhotos: number;
@@ -22,6 +24,7 @@ export type Event = {
 export const events: Event[] = [
   {
     id: 1,
+    slug: "angklung_whispers",
     title: "Angklung Whispers: The Untold Story",
     date: "2024-10-26",
     time: "3:00 - 5:00 PM",
@@ -38,12 +41,14 @@ export const events: Event[] = [
         mediaUrl: "/media/events/whispers/whispers3.png",
       },
     ],
+    readings: [],
     hasGallery: false,
     path: "media/events/whispers",
     numPhotos: 0,
   },
   {
     id: 2,
+    slug: "maestro_sam_udjo",
     title: "Angklung Musical Maestro Sam Udjo Makes His Historic Bay Area Debut",
     date: "2025-07-20",
     time: "3:30 - 5:00 PM",
@@ -66,6 +71,7 @@ export const events: Event[] = [
         mediaUrl: "https://www.youtube.com/embed/E4Bq1xR_9sE?si=DRh8Dcbfg0y0fH1K",
       },
     ],
+    readings: ["/media/events/samudjo/AngklungReport.pdf"],
     hasGallery: true,
     path: "media/events/samudjo",
     numPhotos: 65,

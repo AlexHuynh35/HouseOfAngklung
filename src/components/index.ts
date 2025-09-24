@@ -13,3 +13,4 @@ export { default as MediaCarousel } from "./carousel";
 export { default as ScrollableDescription } from "./scroll";
 export { default as GalleryPopup } from "./gallery_popup";
 export { default as Masonry } from "./masonry";
+export { default as PDFCard } from "./pdf";
