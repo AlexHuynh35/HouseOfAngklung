@@ -27,7 +27,7 @@ export const people: Person[] = [
   {
     id: 4,
     name: "Yulda Asmara",
-    position: "Co-Founder",
+    position: "Public Relations Manager",
     imageUrl: "/media/people/Yulda.jpg",
   },
   {
