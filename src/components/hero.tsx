@@ -3,7 +3,7 @@ import { SaveTheDate } from "@/components";
 
 export default function Hero() {
   return (
-    <section className="w-full">
+    <section className="w-full pt-14 md:pt-16">
       {/*
       <div className="relative w-full h-[300px] md:h-[350px]">
         <Image
