@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import { SaveTheDate } from "@/components";
 
 export default function Hero() {
   return (
     <section className="w-full">
+      {/*
       <div className="relative w-full h-[300px] md:h-[350px]">
         <Image
           src="/media/general/angklung.jpg"
@@ -12,6 +14,9 @@ export default function Hero() {
           priority
         />
       </div>
+      */}
+
+      <SaveTheDate />
 
       <div className="px-4 pb-4 pt-12 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
