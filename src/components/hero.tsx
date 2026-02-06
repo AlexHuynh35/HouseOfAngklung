@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* import Image from 'next/image'; */
 import { SaveTheDate } from "@/components";
 
 export default function Hero() {
