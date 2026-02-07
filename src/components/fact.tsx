@@ -30,7 +30,7 @@ const FactCard = ({ title, description, imageUrl, onLeft, hasTitle, isFit }: Fac
           ) : (
             <div></div>
           )}
-          <blockquote className="text-xl text-left italic border-l-4 border-brown-500 p-4 text-brown-700">
+          <blockquote className="text-xl text-balance text-left italic border-l-4 border-brown-500 p-4 text-brown-700">
             {description}
           </blockquote>
         </div>
@@ -45,7 +45,7 @@ const FactCard = ({ title, description, imageUrl, onLeft, hasTitle, isFit }: Fac
           ) : (
             <div></div>
           )}
-          <blockquote className="text-xl text-left md:text-right italic border-l-4 md:border-l-0 md:border-r-4 border-brown-500 p-4 text-brown-700">
+          <blockquote className="text-xl text-balance text-left md:text-right italic border-l-4 md:border-l-0 md:border-r-4 border-brown-500 p-4 text-brown-700">
             {description}
           </blockquote>
         </div>

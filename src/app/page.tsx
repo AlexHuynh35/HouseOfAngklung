@@ -3,7 +3,7 @@ import { UpcomingEvent, SectionTitle, FactCard } from "@/components";
 export default function Home() {
   return (
     <section className="p-6">
-      <div className="max-w-4xl mx-auto text-center px-4 py-12">
+      <div className="max-w-5xl mx-auto text-center text-balance px-4 py-12">
         <h1 className="text-3xl md:text-4xl font-bold text-brown-800 mb-4">
           Bringing the Sound of Angklung to San Francisco
         </h1>
