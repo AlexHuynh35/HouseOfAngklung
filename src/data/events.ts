@@ -75,13 +75,38 @@ export const events: Event[] = [
     hasGallery: true,
     path: "media/events/samudjo",
     numPhotos: 65,
-  }
+  },
+  {
+    id: 3,
+    slug: "sfiaf",
+    title: "Angklung Performance at the 2026 San Francisco International Arts Festival",
+    date: "TBD",
+    time: "TBD",
+    building: "TBD",
+    address: "TBD",
+    description: `Experience, for the first time at the SFIAF, the vibrant musical traditions of Indonesia through a performance featuring the Angklung. \n
+                The program will blend traditional Indonesian repertoire with cross-cultural arrangements, highlighting the collaborative spirit at the heart of this instrument. \n
+                The event will invite audiences into an interactive and uplifting celebration of culture, unity, and shared musical joy.`,
+    media: [
+      {
+        title: "Media 1",
+        isImage: true,
+        onYouTube: false,
+        mediaUrl: "/media/general/savethedate.jpg",
+      },
+    ],
+    readings: [],
+    hasGallery: false,
+    path: "media/events/sfiaf",
+    numPhotos: 0,
+  },
 ];
 
 export function getUpcomingEvent(): Event | null {
   const now = new Date();
 
   const upcoming = events
+    .filter(event => event.date != "TBD")
     .filter(event => new Date(event.date) > now)
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
@@ -92,6 +117,7 @@ export function getMostRecentEvent(): Event | null {
   const now = new Date();
 
   const pastEvents = events
+    .filter(event => event.date != "TBD")
     .filter(event => new Date(event.date) <= now)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

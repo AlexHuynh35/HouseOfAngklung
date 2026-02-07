@@ -1,9 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lora } from "next/font/google";
 import { Navbar, Hero, Footer } from "@/components/index";
 
-const inter = Inter({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Saung Angklung of San Francisco",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white text-black`}>
+      <body className={`${lora.className} bg-white text-black`}>
         <Navbar />
         <Hero />
         {children}
