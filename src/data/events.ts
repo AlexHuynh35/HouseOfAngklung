@@ -5,6 +5,12 @@ type MediaItem = {
   mediaUrl: string;
 };
 
+type LinkItem = {
+  title: string;
+  short: string;
+  link: string;
+};
+
 export type Event = {
   id: number;
   slug: string;
@@ -16,6 +22,7 @@ export type Event = {
   description: string;
   media: MediaItem[];
   readings: string[];
+  links: LinkItem[];
   hasGallery: boolean;
   path: string;
   numPhotos: number;
@@ -42,6 +49,7 @@ export const events: Event[] = [
       },
     ],
     readings: [],
+    links: [],
     hasGallery: false,
     path: "media/events/whispers",
     numPhotos: 0,
@@ -72,6 +80,13 @@ export const events: Event[] = [
       },
     ],
     readings: ["/media/events/samudjo/AngklungReport.pdf"],
+    links: [
+      {
+        title: "San Francisco Community Music Center",
+        short: "SFCMC",
+        link: "https://sfcmc.org/event/angklung-musical-maestro-sam-udjo/",
+      },
+    ],
     hasGallery: true,
     path: "media/events/samudjo",
     numPhotos: 65,
@@ -96,6 +111,7 @@ export const events: Event[] = [
       },
     ],
     readings: [],
+    links: [],
     hasGallery: false,
     path: "media/events/sfiaf",
     numPhotos: 0,

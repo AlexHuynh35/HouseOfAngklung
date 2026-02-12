@@ -23,7 +23,7 @@ export default async function Event({ params }: EventPageProps) {
 
   return (
     <section className="p-6">
-      <div className="max-w-4xl mx-auto text-center px-4 my-12">
+      <div className="max-w-4xl mx-auto text-center text-balance px-4 my-12">
         <h1 className="text-3xl md:text-4xl font-bold text-brown-800 mb-2">
           {event.title}
         </h1>
@@ -47,6 +47,17 @@ export default async function Event({ params }: EventPageProps) {
           </div>
         </div>
       </div>
+
+      {event.links.length > 0 &&
+        <div className="max-w-5xl mx-auto my-8 flex md:items-center bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+          <div className="w-full p-6 flex flex-col justify-center">
+            <p className="text-gray-600 mb-1 text-lg md:text-xl"><strong>External Links:</strong></p>
+            {event.links.map((link) => (
+              <Link key={link.title} href={link.link} className="w-fit text-gray-600 mb-1 ml-4 underline hover:text-blue-500">{link.title}</Link>
+            ))}
+          </div>
+        </div>
+      }
 
       <div className="max-w-5xl mx-auto my-8 flex md:items-center bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
         <div className="w-full p-6 flex flex-col justify-center">
